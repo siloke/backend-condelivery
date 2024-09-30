@@ -5,6 +5,7 @@ const express = require('express')
 
 AppDataSource.initialize().then(async () => {
     const app = express()
+
     app.use(routes)
     app.listen(3333)
 })
